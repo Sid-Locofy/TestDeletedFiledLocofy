@@ -4,6 +4,7 @@ import { AutoComplete } from "antd";
 import { useNavigate } from "react-router-dom";
 import styles from "./Homepage.module.css";
 
+const sid = "sid love Locofy"
 const Homepage: FunctionComponent = () => {
   const navigate = useNavigate();
 
