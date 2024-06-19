@@ -7,7 +7,7 @@ import "./global.css";
 
 const container = document.getElementById("root");
 const root = createRoot(container!);
-
+const sid = "test"
 root.render(
   <BrowserRouter>
     <App />
