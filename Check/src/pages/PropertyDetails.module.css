@@ -1,0 +1,1044 @@
+.logoIcon {
+  width: 156.8px;
+  height: 40.5px;
+}
+.home,
+.logoIcon {
+  position: relative;
+}
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-11xl);
+}
+.avatarIcon,
+.notificationsIcon {
+  width: 26px;
+  position: relative;
+  height: 26.5px;
+  object-fit: cover;
+}
+.avatarIcon {
+  width: 36px;
+  border-radius: 50%;
+  height: 36px;
+}
+.loginSection {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+}
+.header,
+.headerContent,
+.loginSection {
+  display: flex;
+  align-items: center;
+}
+.headerContent {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1280px;
+}
+.header {
+  align-self: stretch;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--light-grey-border);
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-sm) var(--padding-xl);
+}
+.frameChild,
+.frameItem {
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.frameChild {
+  width: 782px;
+  border-radius: var(--br-5xs);
+  height: 438px;
+  overflow: hidden;
+}
+.frameItem {
+  align-self: stretch;
+  width: 160px;
+  max-height: 100%;
+}
+.frameChild2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-9xs);
+  width: 148.4px;
+  height: 86px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.vectorIcon {
+  position: absolute;
+  top: calc(50% - 12.3px);
+  left: calc(50% - 15.6px);
+  width: 31.7px;
+  height: 24.6px;
+}
+.frameContainer {
+  align-self: stretch;
+  width: 160px;
+  position: relative;
+  flex-shrink: 0;
+}
+.frameGroup,
+.frameParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameGroup {
+  width: 782px;
+  border-radius: var(--br-5xs);
+  height: 86px;
+  overflow-x: auto;
+  flex-shrink: 0;
+  flex-direction: row;
+  gap: var(--gap-3xs);
+}
+.frameParent {
+  flex-direction: column;
+  gap: 15px;
+}
+.brightwoodsCabin {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+}
+.bridlepathOntarioCanada {
+  position: relative;
+  font-size: var(--font-size-base);
+  letter-spacing: 0.02em;
+}
+.brightwoodsCabinParent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-7xs);
+}
+.heartIcon {
+  width: 36px;
+  position: relative;
+  height: 36px;
+}
+.frameParent4 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-7xs);
+}
+.div {
+  position: relative;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+}
+.vectorIcon1 {
+  width: 16px;
+  position: relative;
+  height: 16px;
+}
+.parent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+}
+.reviews {
+  position: relative;
+  text-decoration: underline;
+  letter-spacing: 0.02em;
+}
+.frameParent3,
+.reviewsWrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+.reviewsWrapper {
+  border-left: 1px solid var(--light-grey-border);
+  flex-direction: row;
+  align-items: center;
+  padding: 0 var(--padding-5xs);
+  color: var(--accent);
+}
+.frameParent3 {
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-xs);
+}
+.welcomeToOur {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-base);
+  letter-spacing: 0.02em;
+  line-height: 160%;
+}
+.frameParent2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 17px;
+}
+.b,
+.night {
+  position: absolute;
+  top: 0;
+  left: 0;
+  letter-spacing: 0.02em;
+}
+.night {
+  top: 18.5px;
+  left: 91px;
+  font-size: var(--font-size-lg);
+}
+.group {
+  width: 138px;
+  position: relative;
+  height: 39px;
+}
+.icon {
+  position: absolute;
+  height: 43.33%;
+  width: 63.11%;
+  top: 28.33%;
+  right: 18.45%;
+  bottom: 28.33%;
+  left: 18.45%;
+  border-radius: var(--br-12xs-5);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.groupChild {
+  position: absolute;
+  height: 108.33%;
+  width: 107.28%;
+  top: -3.89%;
+  right: -3.88%;
+  bottom: -4.44%;
+  left: -3.4%;
+  border-radius: var(--br-9xs-5);
+  border: 1.5px solid var(--accent);
+  box-sizing: border-box;
+}
+.iconParent {
+  position: absolute;
+  height: 81.82%;
+  width: 93.64%;
+  top: 9.09%;
+  right: 3.18%;
+  bottom: 9.09%;
+  left: 3.18%;
+}
+.icontrend {
+  width: 22px;
+  position: relative;
+  height: 22px;
+}
+.bestTimeTo {
+  position: relative;
+  letter-spacing: 0.02em;
+}
+.groupParent,
+.icontrendParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.icontrendParent {
+  justify-content: flex-start;
+  gap: var(--gap-7xs);
+  font-size: var(--font-size-base);
+  color: var(--accent);
+}
+.groupParent {
+  align-self: stretch;
+  justify-content: space-between;
+}
+.button {
+  height: 26px;
+  position: relative;
+  font-size: var(--font-size-base);
+  letter-spacing: 0.46px;
+  line-height: 26px;
+  font-weight: 600;
+  font-family: var(--font-archivo);
+  color: var(--white);
+  text-align: center;
+  display: inline-block;
+}
+.searchFlightsButton {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-base) var(--padding-xl);
+  background-color: var(--accent);
+  align-self: stretch;
+  border-radius: var(--br-7xs);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.frameParent1,
+.frameParent6 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameParent6 {
+  gap: var(--gap-lgi);
+  font-size: 36px;
+}
+.frameParent1 {
+  gap: var(--gap-9xl);
+}
+.ellipseIcon {
+  width: 50px;
+  position: relative;
+  border-radius: 50%;
+  height: 50px;
+  object-fit: cover;
+}
+.joinedInMay,
+.michelleWard {
+  position: relative;
+  letter-spacing: 0.02em;
+}
+.michelleWard {
+  line-height: 150%;
+  font-weight: 600;
+}
+.joinedInMay {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-200);
+}
+.michelleWardParent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-11xs);
+}
+.vectorIcon2 {
+  width: 12.3px;
+  position: relative;
+  height: 18.4px;
+}
+.superhost {
+  position: relative;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+}
+.vectorParent {
+  border-radius: 17px;
+  background-color: #defff9;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) var(--padding-2xs);
+  gap: var(--gap-8xs);
+  color: var(--accent);
+}
+.ellipseParent,
+.hostedByParent {
+  align-self: stretch;
+  display: flex;
+  justify-content: flex-start;
+}
+.ellipseParent {
+  border-top: 0.7px solid var(--light-grey-border);
+  flex-direction: row;
+  align-items: center;
+  padding: var(--padding-5xs) 0 0;
+  gap: var(--gap-3xs);
+  color: var(--dark);
+}
+.hostedByParent {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-xs);
+  font-size: var(--font-size-base);
+  color: var(--light-text);
+}
+.frameDiv,
+.listingHero {
+  align-self: stretch;
+  display: flex;
+  gap: var(--gap-9xl);
+}
+.frameDiv {
+  flex: 1;
+  border-radius: 7px;
+  background-color: var(--white);
+  border: 1px solid var(--light-grey-border);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 26px 28px;
+}
+.listingHero {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 29px;
+}
+.welcomeToBrightwoods {
+  margin-block-start: 0;
+  margin-block-end: 17px;
+}
+.livingSpace {
+  font-family: var(--font-archivo);
+}
+.comeBeOur {
+  margin: 0;
+}
+.welcomeToBrightwoodsContainer {
+  align-self: stretch;
+  position: relative;
+  line-height: 160%;
+  display: -webkit-inline-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+}
+.button1 {
+  height: 26px;
+  position: relative;
+  letter-spacing: 0.46px;
+  line-height: 26px;
+  font-weight: 600;
+  color: var(--accent);
+  text-align: center;
+  display: inline-block;
+}
+.welcomeToBrightwoodsCabinParent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-21xl);
+}
+.detailscardChild {
+  width: 60px;
+  position: relative;
+  border-radius: var(--br-5xs);
+  height: 60px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.aPrivateRoom {
+  position: relative;
+  font-size: var(--font-size-base);
+  letter-spacing: 0.02em;
+  color: var(--color-gray-200);
+}
+.dedicatedWorkspaceParent {
+  flex-direction: column;
+  gap: var(--gap-11xs);
+}
+.dedicatedWorkspaceParent,
+.detailscardParent,
+.frameParent7,
+.listingDescription {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.detailscardParent {
+  width: 470px;
+  flex-direction: column;
+  gap: var(--gap-5xl);
+  font-size: var(--font-size-lg);
+}
+.frameParent7,
+.listingDescription {
+  align-self: stretch;
+}
+.frameParent7 {
+  flex-direction: row;
+  gap: var(--gap-21xl);
+  font-size: var(--font-size-base);
+}
+.listingDescription {
+  border-bottom: 1px solid var(--light-grey-border);
+  flex-direction: column;
+  padding: 0 0 var(--padding-5xl);
+  gap: var(--gap-xl);
+}
+.amenities {
+  width: 780.8px;
+  position: relative;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  display: inline-block;
+}
+.mdilakeIcon {
+  width: 20px;
+  position: relative;
+  height: 21px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.mdilakeParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.tablertoolsKitchen2Icon {
+  width: 20px;
+  position: relative;
+  height: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.kitchen {
+  width: 66px;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.amenitiessection1,
+.amenitiessection1Parent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.amenitiessection1 {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-sm);
+}
+.amenitiessection1Parent {
+  align-self: stretch;
+  flex-direction: row;
+  gap: var(--gap-11xl);
+}
+.button2 {
+  height: 26px;
+  position: relative;
+  font-size: var(--font-size-base);
+  letter-spacing: 0.46px;
+  line-height: 26px;
+  font-weight: 600;
+  font-family: var(--font-archivo);
+  color: var(--dark);
+  text-align: center;
+  display: inline-block;
+}
+.searchFlightsButton1 {
+  cursor: pointer;
+  border: 1px solid var(--dark);
+  padding: var(--padding-2xs) var(--padding-xl);
+  background-color: transparent;
+  border-radius: var(--br-7xs);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.searchFlightsButton1:hover {
+  background-color: var(--color-saddlebrown);
+}
+.amenitiesParent,
+.frameParent8 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameParent8 {
+  align-self: stretch;
+  gap: 31px;
+  font-size: var(--font-size-base);
+}
+.amenitiesParent {
+  flex: 1;
+  gap: var(--gap-xl);
+}
+.vectorIcon3 {
+  width: 9.3px;
+  position: relative;
+  height: 11px;
+}
+.vectorGroup,
+.whereYoullBeParent {
+  display: flex;
+  justify-content: flex-start;
+}
+.vectorGroup {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-7xs);
+  font-size: var(--font-size-base);
+}
+.whereYoullBeParent {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-8xs);
+}
+.suncloudIcon {
+  width: 47px;
+  position: relative;
+  height: 47px;
+}
+.weatherInfo,
+.weatherInfo1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.weatherInfo1 {
+  width: 51px;
+  flex-direction: column;
+  gap: var(--gap-11xs);
+}
+.weatherInfo {
+  flex-direction: row;
+  gap: var(--gap-3xs);
+  text-align: left;
+  font-size: var(--font-size-base);
+}
+.c,
+.sunIcon {
+  width: 40px;
+  position: relative;
+}
+.sunIcon {
+  height: 40px;
+}
+.c {
+  display: inline-block;
+}
+.cWrapper,
+.sunParent {
+  display: flex;
+  flex-direction: column;
+}
+.cWrapper {
+  align-items: center;
+  justify-content: flex-start;
+}
+.sunParent {
+  gap: var(--gap-5xs);
+}
+.frameParent11,
+.sunParent,
+.weatherInfoParent {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameParent11 {
+  display: none;
+  flex-direction: column;
+  gap: var(--gap-5xs);
+}
+.weatherInfoParent {
+  width: 154px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  padding: 2px 0;
+  box-sizing: border-box;
+  gap: var(--gap-5xl);
+  text-align: center;
+  font-size: var(--font-size-3xs);
+}
+.frameParent10 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 0;
+}
+.rectangleIcon {
+  width: 480px;
+  position: relative;
+  border-radius: var(--br-5xs);
+  height: 248px;
+  object-fit: cover;
+  z-index: 1;
+}
+.frameChild3 {
+  width: 37px;
+  position: absolute;
+  margin: 0 !important;
+  right: 12px;
+  bottom: 161px;
+  border-radius: var(--br-9xs);
+  height: 65px;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 2;
+}
+.frameParent9 {
+  position: relative;
+  gap: var(--gap-xl);
+}
+.frameParent9,
+.listingDetailsSection,
+.locationAmenities,
+.locationAmenitiesInner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.listingDetailsSection,
+.locationAmenities {
+  align-self: stretch;
+  flex-direction: row;
+  gap: var(--gap-lgi);
+}
+.listingDetailsSection {
+  flex-direction: column;
+  gap: var(--gap-11xl);
+}
+.button3 {
+  height: 26px;
+  position: relative;
+  font-size: var(--font-size-base);
+  letter-spacing: 0.46px;
+  line-height: 26px;
+  font-weight: 600;
+  color: var(--accent);
+  text-align: center;
+  display: inline-block;
+}
+.reviewsParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.frameChild4 {
+  width: 64px;
+  position: relative;
+  border-radius: 50%;
+  height: 64px;
+  object-fit: cover;
+}
+.ellipseGroup,
+.johnnyCashParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-10xs);
+}
+.ellipseGroup {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-base);
+}
+.michellesPlaceWas {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 160%;
+}
+.reviewSection,
+.reviewcard,
+.reviewcardParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.reviewcard {
+  flex: 1;
+  border-radius: var(--br-5xs);
+  background-color: var(--white);
+  border: 1px solid var(--light-grey-border);
+  box-sizing: border-box;
+  flex-direction: column;
+  padding: var(--padding-5xl);
+  gap: var(--gap-xs);
+  min-width: 350px;
+}
+.reviewSection,
+.reviewcardParent {
+  align-self: stretch;
+  gap: var(--gap-xl);
+}
+.reviewcardParent {
+  flex-direction: row;
+  font-size: var(--font-size-base);
+}
+.reviewSection {
+  flex-direction: column;
+}
+.vectorIcon7 {
+  width: 6.7px;
+  position: relative;
+  height: 10px;
+}
+.heartIcon1,
+.vectorContainer {
+  position: absolute;
+  margin: 0 !important;
+  top: 10px;
+}
+.vectorContainer {
+  left: 10px;
+  border-radius: var(--br-smi);
+  background-color: var(--white);
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-7xs) var(--padding-6xs);
+  gap: var(--gap-11xs);
+  z-index: 0;
+}
+.heartIcon1 {
+  width: 30px;
+  right: 9.5px;
+  height: 30px;
+  z-index: 1;
+}
+.brightwoodsEstateParent,
+.frameParent20 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameParent20 {
+  align-self: stretch;
+  width: 181px;
+  position: relative;
+  gap: var(--gap-3xs);
+  background-image: url(/public/frame-91@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.brightwoodsEstateParent {
+  gap: var(--gap-9xs);
+}
+.vectorIcon8 {
+  width: 13px;
+  position: relative;
+  height: 13px;
+}
+.parent3 {
+  gap: var(--gap-7xs);
+  font-size: var(--font-size-sm);
+}
+.frameWrapper,
+.parent3,
+.parent4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.parent4 {
+  gap: var(--gap-11xs);
+}
+.frameWrapper {
+  color: var(--accent);
+}
+.frameParent21 {
+  flex: 1;
+  flex-direction: column;
+  padding: var(--padding-base);
+  gap: var(--gap-xl);
+  font-size: var(--font-size-base);
+  color: var(--dark);
+}
+.frameParent21,
+.frameParent23,
+.frameParent26,
+.staycard {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.staycard {
+  flex: 1;
+  border-radius: var(--br-3xs);
+  background-color: var(--white);
+  border: 1px solid var(--light-grey-border);
+  box-sizing: border-box;
+  height: 143px;
+  overflow: hidden;
+  flex-direction: row;
+}
+.frameParent23,
+.frameParent26 {
+  align-self: stretch;
+  width: 181px;
+  flex-direction: column;
+  position: relative;
+  gap: var(--gap-3xs);
+  background-image: url(/public/frame-911@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.frameParent26 {
+  background-image: url(/public/frame-921@3x.png);
+}
+.simcoeOntarioCanada {
+  position: relative;
+  font-size: var(--font-size-sm);
+  letter-spacing: 0.02em;
+  color: var(--light-text);
+}
+.listingHeroParent,
+.staycardParent {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.staycardParent {
+  flex-direction: row;
+  gap: var(--gap-xl);
+  font-size: var(--font-size-xs);
+  color: var(--accent);
+}
+.listingHeroParent {
+  background-color: var(--color-gray-100);
+  flex-direction: column;
+  padding: var(--padding-xl) var(--padding-31xl);
+  gap: 44px;
+  font-size: var(--font-size-5xl);
+  color: var(--dark);
+}
+.support {
+  position: relative;
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+}
+.supportParent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-xl) 0 0;
+  gap: var(--gap-sm);
+}
+.footer,
+.footerInner,
+.frameParent29 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.frameParent29 {
+  flex: 1;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.footer,
+.footerInner {
+  flex-wrap: wrap;
+}
+.footerInner {
+  width: 1280px;
+  justify-content: flex-start;
+  max-width: 1280px;
+}
+.footer {
+  align-self: stretch;
+  background-color: var(--light-bg);
+  border-top: 1px solid var(--light-grey-border);
+  justify-content: center;
+  padding: var(--padding-xl) var(--padding-11xl) var(--padding-21xl);
+  font-size: var(--font-size-base);
+  color: var(--dark);
+}
+.localhostIncAll {
+  position: relative;
+  line-height: 120%;
+  font-weight: 300;
+}
+.privacyPolicyParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+}
+.bandInner,
+.localhostIncAllRightsResParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 1280px;
+}
+.localhostIncAllRightsResParent {
+  flex: 1;
+  justify-content: space-between;
+}
+.bandInner {
+  width: 100%;
+  height: 17px;
+  justify-content: center;
+}
+.band,
+.propertyDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.band {
+  align-self: stretch;
+  background-color: var(--color-gray-100);
+  border-top: 1px solid var(--light-grey-border);
+  padding: var(--padding-xs) var(--padding-11xl);
+}
+.propertyDetails {
+  width: 100%;
+  position: relative;
+  overflow: scroll;
+  height: 100vh;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-black);
+  font-family: var(--font-archivo);
+}
+@media screen and (max-width: 960px) {
+  .searchFlightsButton1 {
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 420px) {
+  .searchFlightsButton1 {
+    width: 100% !important;
+  }
+}

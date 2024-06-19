@@ -1,0 +1,378 @@
+.logoIcon {
+  width: 156.8px;
+  height: 40.5px;
+}
+.home,
+.logoIcon {
+  position: relative;
+}
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-11xl);
+}
+.avatarIcon,
+.notificationsIcon {
+  width: 26px;
+  position: relative;
+  height: 26.5px;
+  object-fit: cover;
+}
+.avatarIcon {
+  width: 36px;
+  border-radius: 50%;
+  height: 36px;
+}
+.loginSection {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+}
+.header,
+.headerContent {
+  display: flex;
+  align-items: center;
+}
+.headerContent {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1280px;
+}
+.header {
+  align-self: stretch;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--light-grey-border);
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-sm) var(--padding-xl);
+}
+.createAccount {
+  align-self: stretch;
+  height: 28px;
+  position: relative;
+  letter-spacing: 0.02em;
+  display: inline-block;
+}
+.formText {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.emailAddress {
+  border: 0;
+  outline: 0;
+  font-family: var(--font-archivo);
+  font-size: var(--font-size-base);
+  background-color: transparent;
+  height: 17px;
+  flex: 1;
+  position: relative;
+  letter-spacing: 0.24px;
+  color: var(--color-darkslategray);
+  text-align: left;
+  display: inline-block;
+}
+.iconaccount {
+  width: 20px;
+  position: relative;
+  height: 20px;
+}
+.email,
+.formFields {
+  align-self: stretch;
+  display: flex;
+  justify-content: flex-start;
+}
+.email {
+  border-radius: var(--br-9xs);
+  background-color: var(--white);
+  border: 1px solid var(--color-gainsboro);
+  box-sizing: border-box;
+  height: 51px;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: row;
+  align-items: center;
+  padding: var(--padding-5xs) var(--padding-lg-8);
+  gap: var(--gap-3xs-4);
+}
+.formFields {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-base-7);
+}
+.button {
+  height: 26px;
+  position: relative;
+  font-size: var(--font-size-base);
+  letter-spacing: 0.46px;
+  line-height: 26px;
+  font-weight: 600;
+  font-family: var(--font-archivo);
+  color: var(--white);
+  text-align: center;
+  display: inline-block;
+}
+.searchFlightsButton {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-smi) var(--padding-xl);
+  background-color: var(--accent);
+  width: 160px;
+  border-radius: var(--br-7xs);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+.searchFlightsButton:hover {
+  background-color: var(--color-saddlebrown);
+}
+.form1 {
+  margin: 0;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-7xl-7);
+}
+.frameChild,
+.orSignUp {
+  align-self: stretch;
+  position: relative;
+}
+.frameChild {
+  border-top: 1.6px solid var(--color-whitesmoke-200);
+  box-sizing: border-box;
+  height: 1.6px;
+}
+.orSignUp {
+  letter-spacing: 0.02em;
+  line-height: 160%;
+}
+.imageIcon {
+  width: 40px;
+  position: relative;
+  height: 40.5px;
+  object-fit: cover;
+}
+.socialLogin,
+.text {
+  display: flex;
+  align-items: center;
+}
+.text {
+  width: 128.8px;
+  height: 17px;
+  position: relative;
+  font-size: var(--font-size-base);
+  letter-spacing: 0.24px;
+  font-family: var(--font-archivo);
+  color: var(--light-text);
+  text-align: center;
+  justify-content: center;
+}
+.socialLogin {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-6xl);
+  background-color: var(--color-whitesmoke-100);
+  flex: 1;
+  border-radius: var(--br-5xs);
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  gap: var(--gap-lg);
+  min-width: 125px;
+}
+.text1,
+.text2 {
+  position: relative;
+  font-size: var(--font-size-base);
+  letter-spacing: 0.24px;
+  font-family: var(--font-archivo);
+  color: var(--light-text);
+  text-align: center;
+}
+.text2 {
+  width: 128.8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.socialLoginContainer,
+.socialMediaLogin {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.socialLoginContainer {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--gap-sm);
+}
+.socialMediaLogin {
+  flex-direction: column;
+  gap: var(--gap-3xs);
+}
+.login {
+  color: var(--accent);
+}
+.iAlreadyHaveContainer {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 160%;
+  text-align: center;
+  cursor: pointer;
+}
+.formParent {
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-18xl-7);
+  font-size: var(--font-size-base);
+}
+.form,
+.formParent,
+.formWrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+.form {
+  flex: 1;
+  background-color: var(--white);
+  flex-direction: column;
+  align-items: center;
+  padding: var(--padding-21xl) var(--padding-29xl);
+  gap: var(--gap-5xl);
+}
+.formWrapper {
+  width: 589px;
+  border-radius: var(--br-5xs);
+  overflow: hidden;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.loginSections {
+  width: 1440px;
+  height: 1036px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/public/login-sections@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  font-size: var(--font-size-7xl);
+  color: var(--dark);
+}
+.localhostIncAll {
+  position: relative;
+  line-height: 120%;
+  font-weight: 300;
+}
+.privacyPolicyParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+}
+.bandInner,
+.localhostIncAllRightsResParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 1280px;
+}
+.localhostIncAllRightsResParent {
+  flex: 1;
+  justify-content: space-between;
+}
+.bandInner {
+  width: 100%;
+  height: 17px;
+  justify-content: center;
+}
+.band,
+.signUpPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.band {
+  align-self: stretch;
+  border-top: 1px solid var(--light-grey-border);
+  align-items: center;
+  padding: var(--padding-xs) var(--padding-11xl);
+}
+.signUpPage {
+  position: relative;
+  background-color: var(--color-gray-100);
+  width: 100%;
+  overflow: scroll;
+  align-items: flex-start;
+  height: 100vh;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-black);
+  font-family: var(--font-archivo);
+}
+.signUpPage:hover {
+  background: linear-gradient(#fff, #fff), #87550a;
+}
+@media screen and (max-width: 960px) {
+  .createAccount {
+    font-size: var(--font-size-lg);
+  }
+  .searchFlightsButton {
+    margin-right: auto;
+  }
+  .form,
+  .socialLogin {
+    padding-left: var(--padding-5xs);
+    padding-right: var(--padding-5xs);
+    box-sizing: border-box;
+  }
+  .form {
+    padding-left: var(--padding-3xs);
+    padding-right: var(--padding-3xs);
+  }
+}
+@media screen and (max-width: 420px) {
+  .searchFlightsButton {
+    width: 100% !important;
+  }
+  .socialLogin {
+    flex: unset;
+    align-self: stretch;
+  }
+  .socialLoginContainer {
+    flex-direction: column;
+  }
+  .form {
+    padding-left: var(--padding-8xs);
+    padding-right: var(--padding-8xs);
+    box-sizing: border-box;
+  }
+  .signUpPage {
+    width: 100%;
+  }
+  .signUpPage:hover {
+    background-color: var(--color-orange);
+  }
+}
