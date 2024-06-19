@@ -7,7 +7,6 @@ import ListingItem from "../components/ListingItem";
 import Footer from "../components/Footer";
 import styles from "./Homepage.module.css";
 
-const sid = "sid love Locofy"
 const Homepage: FunctionComponent = () => {
   const navigate = useNavigate();
 
