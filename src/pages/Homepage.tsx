@@ -1,9 +1,8 @@
 import { FunctionComponent, useCallback } from "react";
 import "antd/dist/antd.min.css";
 import { AutoComplete } from "antd";
-import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
-import ListingItem from "../components/ListingItem";
+import { useNavigate } from "react-router-dom";
 import styles from "./Homepage.module.css";
 
 const Homepage: FunctionComponent = () => {
@@ -108,135 +107,779 @@ const Homepage: FunctionComponent = () => {
           </div>
         </div>
         <div className={styles.homes}>
-          <ListingItem
-            listingImage="/image@2x.png"
-            listingTitle="Brightwoods Cabin"
-            listingSubtitle="Bridlepath, Ontario, Canada"
-            rating="4.9"
-            price="$658"
-            showBestTime
-            onListingItemContainerClick={onListingItemContainerClick}
-          />
-          <ListingItem
-            listingImage="/image1@2x.png"
-            listingTitle="Urban Loft"
-            listingSubtitle="Georgina Bay, Ontario, Canada"
-            rating="4.5"
-            price="$410"
-            showBestTime={false}
-          />
-          <ListingItem
-            listingImage="/image2@2x.png"
-            listingTitle="Forestville Cottages"
-            listingSubtitle="Simcoe, Ontario Canada"
-            rating="5.0"
-            price="$325"
-            showBestTime={false}
-          />
-          <ListingItem
-            listingImage="/image3@2x.png"
-            listingTitle="Unionville Logde"
-            listingSubtitle="Markham, Ontario Canada"
-            rating="4.6"
-            price="$485"
-            showBestTime
-          />
-          <ListingItem
-            listingImage="/image4@2x.png"
-            listingTitle="Missisuaga Aistream"
-            listingSubtitle="Missisauga, Ontario, Canada"
-            rating="4.8"
-            price="$502"
-            showBestTime
-          />
-          <ListingItem
-            listingImage="/image5@2x.png"
-            listingTitle="Niagara Homes"
-            listingSubtitle="Niagara, Ontario, Canada"
-            rating="4.9"
-            price="$655"
-            showBestTime={false}
-          />
-          <ListingItem
-            listingImage="/image6@2x.png"
-            listingTitle="Sunny Estate"
-            listingSubtitle="Barcort, Ontario Canada"
-            rating="5.0"
-            price="$320"
-            showBestTime
-          />
-          <ListingItem
-            listingImage="/image7@2x.png"
-            listingTitle="Lawrence Hills"
-            listingSubtitle="Lawrence, Ontario Canada"
-            rating="5.0"
-            price="$350"
-            showBestTime={false}
-          />
-          <ListingItem
-            listingImage="/image8@2x.png"
-            listingTitle="Simcoe Lake Lodge"
-            listingSubtitle="Simcoe, Ontario, Canada"
-            rating="5.0"
-            price="$395"
-            showBestTime={false}
-          />
-          <ListingItem
-            listingImage="/image9@2x.png"
-            listingTitle="Wasaga Beach Home"
-            listingSubtitle="Georgina Bay, Ontario, Canada"
-            rating="5.0"
-            price="$385"
-            showBestTime
-          />
-          <ListingItem
-            listingImage="/image10@2x.png"
-            listingTitle="Banff Hills"
-            listingSubtitle="Banff, Alberta, Canada"
-            rating="5.0"
-            price="$385"
-            showBestTime
-          />
-          <ListingItem
-            listingImage="/image11@2x.png"
-            listingTitle="Creemore Canada"
-            listingSubtitle="Creemore, Alberta, Canada"
-            rating="5.0"
-            price="$385"
-            showBestTime={false}
-          />
-          <ListingItem
-            listingImage="/image12@2x.png"
-            listingTitle="Kawartha Lakes"
-            listingSubtitle="Kawartha, Alberta,  Canada"
-            rating="5.0"
-            price="$385"
-            showBestTime={false}
-          />
-          <ListingItem
-            listingImage="/image13@2x.png"
-            listingTitle="Revelstoke Cabin"
-            listingSubtitle="Revelstoke, Alberta, Canada"
-            rating="5.0"
-            price="$385"
-            showBestTime
-          />
-          <ListingItem
-            listingImage="/image14@2x.png"
-            listingTitle="Brightwoods Estate"
-            listingSubtitle="Brightwoods Estate"
-            rating="5.0"
-            price="$385"
-            showBestTime={false}
-          />
-          <ListingItem
-            listingImage="/image15@2x.png"
-            listingTitle="Brightwoods Estate"
-            listingSubtitle="Brightwoods Estate"
-            rating="5.0"
-            price="$385"
-            showBestTime={false}
-          />
+          <div
+            className={styles.listingItem}
+            onClick={onListingItemContainerClick}
+          >
+            <img
+              className={styles.listingImageIcon}
+              alt=""
+              src="/image@2x.png"
+            />
+            <div className={styles.superhostTag}>
+              <img
+                className={styles.superhostIcon}
+                alt=""
+                src="/superhost-icon.svg"
+              />
+              <div className={styles.superhost}>Superhost</div>
+            </div>
+            <img className={styles.heartIcon} alt="" src="/hearticon.svg" />
+            <div className={styles.itemDetails}>
+              <div className={styles.listingInfo}>
+                <div className={styles.listingCont}>
+                  <div className={styles.listingTitle}>Brightwoods Cabin</div>
+                  <div className={styles.listingSubtitle}>
+                    Bridlepath, Ontario, Canada
+                  </div>
+                </div>
+                <div className={styles.ratingCont}>
+                  <div className={styles.rating}>4.9</div>
+                  <img
+                    className={styles.starIcon}
+                    alt=""
+                    src="/star-icon.svg"
+                  />
+                </div>
+              </div>
+              <div className={styles.bottomContainer}>
+                <div className={styles.pricePerNight}>
+                  <div className={styles.rating}>$658</div>
+                  <div className={styles.night}>/night</div>
+                </div>
+                <button className={styles.bestTime}>
+                  <img
+                    className={styles.trendIcon}
+                    alt=""
+                    src="/trend-icon.svg"
+                  />
+                  <div className={styles.priceChart}>Price chart</div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className={styles.listingItem1}>
+            <img
+              className={styles.listingImageIcon}
+              alt=""
+              src="/image1@2x.png"
+            />
+            <div className={styles.superhostTag}>
+              <img
+                className={styles.superhostIcon}
+                alt=""
+                src="/superhost-icon.svg"
+              />
+              <div className={styles.superhost}>Superhost</div>
+            </div>
+            <img className={styles.heartIcon} alt="" src="/hearticon.svg" />
+            <div className={styles.itemDetails}>
+              <div className={styles.listingInfo}>
+                <div className={styles.listingCont}>
+                  <div className={styles.listingTitle}>Urban Loft</div>
+                  <div className={styles.listingSubtitle}>
+                    Georgina Bay, Ontario, Canada
+                  </div>
+                </div>
+                <div className={styles.ratingCont}>
+                  <div className={styles.rating}>4.5</div>
+                  <img
+                    className={styles.starIcon}
+                    alt=""
+                    src="/star-icon.svg"
+                  />
+                </div>
+              </div>
+              <div className={styles.bottomContainer}>
+                <div className={styles.pricePerNight}>
+                  <div className={styles.rating}>$410</div>
+                  <div className={styles.night}>/night</div>
+                </div>
+                <button className={styles.bestTime1}>
+                  <img
+                    className={styles.trendIcon}
+                    alt=""
+                    src="/trend-icon.svg"
+                  />
+                  <div className={styles.priceChart}>Price chart</div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className={styles.listingItem1}>
+            <img
+              className={styles.listingImageIcon}
+              alt=""
+              src="/image2@2x.png"
+            />
+            <div className={styles.superhostTag}>
+              <img
+                className={styles.superhostIcon}
+                alt=""
+                src="/superhost-icon.svg"
+              />
+              <div className={styles.superhost}>Superhost</div>
+            </div>
+            <img className={styles.heartIcon} alt="" src="/hearticon.svg" />
+            <div className={styles.itemDetails}>
+              <div className={styles.listingInfo}>
+                <div className={styles.listingCont}>
+                  <div className={styles.listingTitle}>
+                    Forestville Cottages
+                  </div>
+                  <div className={styles.listingSubtitle}>
+                    Simcoe, Ontario Canada
+                  </div>
+                </div>
+                <div className={styles.ratingCont}>
+                  <div className={styles.rating}>5.0</div>
+                  <img
+                    className={styles.starIcon}
+                    alt=""
+                    src="/star-icon.svg"
+                  />
+                </div>
+              </div>
+              <div className={styles.bottomContainer}>
+                <div className={styles.pricePerNight}>
+                  <div className={styles.rating}>$325</div>
+                  <div className={styles.night}>/night</div>
+                </div>
+                <button className={styles.bestTime1}>
+                  <img
+                    className={styles.trendIcon}
+                    alt=""
+                    src="/trend-icon.svg"
+                  />
+                  <div className={styles.priceChart}>Price chart</div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className={styles.listingItem1}>
+            <img
+              className={styles.listingImageIcon}
+              alt=""
+              src="/image3@2x.png"
+            />
+            <div className={styles.superhostTag}>
+              <img
+                className={styles.superhostIcon}
+                alt=""
+                src="/superhost-icon.svg"
+              />
+              <div className={styles.superhost}>Superhost</div>
+            </div>
+            <img className={styles.heartIcon} alt="" src="/hearticon.svg" />
+            <div className={styles.itemDetails}>
+              <div className={styles.listingInfo}>
+                <div className={styles.listingCont}>
+                  <div className={styles.listingTitle}>Unionville Logde</div>
+                  <div className={styles.listingSubtitle}>
+                    Markham, Ontario Canada
+                  </div>
+                </div>
+                <div className={styles.ratingCont}>
+                  <div className={styles.rating}>4.6</div>
+                  <img
+                    className={styles.starIcon}
+                    alt=""
+                    src="/star-icon.svg"
+                  />
+                </div>
+              </div>
+              <div className={styles.bottomContainer}>
+                <div className={styles.pricePerNight}>
+                  <div className={styles.rating}>$485</div>
+                  <div className={styles.night}>/night</div>
+                </div>
+                <button className={styles.bestTime}>
+                  <img
+                    className={styles.trendIcon}
+                    alt=""
+                    src="/trend-icon.svg"
+                  />
+                  <div className={styles.priceChart}>Price chart</div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className={styles.listingItem1}>
+            <img
+              className={styles.listingImageIcon}
+              alt=""
+              src="/image4@2x.png"
+            />
+            <div className={styles.superhostTag}>
+              <img
+                className={styles.superhostIcon}
+                alt=""
+                src="/superhost-icon.svg"
+              />
+              <div className={styles.superhost}>Superhost</div>
+            </div>
+            <img className={styles.heartIcon} alt="" src="/hearticon.svg" />
+            <div className={styles.itemDetails}>
+              <div className={styles.listingInfo}>
+                <div className={styles.listingCont}>
+                  <div className={styles.listingTitle}>Missisuaga Aistream</div>
+                  <div className={styles.listingSubtitle}>
+                    Missisauga, Ontario, Canada
+                  </div>
+                </div>
+                <div className={styles.ratingCont}>
+                  <div className={styles.rating}>4.8</div>
+                  <img
+                    className={styles.starIcon}
+                    alt=""
+                    src="/star-icon.svg"
+                  />
+                </div>
+              </div>
+              <div className={styles.bottomContainer}>
+                <div className={styles.pricePerNight}>
+                  <div className={styles.rating}>$502</div>
+                  <div className={styles.night}>/night</div>
+                </div>
+                <button className={styles.bestTime}>
+                  <img
+                    className={styles.trendIcon}
+                    alt=""
+                    src="/trend-icon.svg"
+                  />
+                  <div className={styles.priceChart}>Price chart</div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className={styles.listingItem1}>
+            <img
+              className={styles.listingImageIcon}
+              alt=""
+              src="/image5@2x.png"
+            />
+            <div className={styles.superhostTag}>
+              <img
+                className={styles.superhostIcon}
+                alt=""
+                src="/superhost-icon.svg"
+              />
+              <div className={styles.superhost}>Superhost</div>
+            </div>
+            <img className={styles.heartIcon} alt="" src="/hearticon.svg" />
+            <div className={styles.itemDetails}>
+              <div className={styles.listingInfo}>
+                <div className={styles.listingCont}>
+                  <div className={styles.listingTitle}>Niagara Homes</div>
+                  <div className={styles.listingSubtitle}>
+                    Niagara, Ontario, Canada
+                  </div>
+                </div>
+                <div className={styles.ratingCont}>
+                  <div className={styles.rating}>4.9</div>
+                  <img
+                    className={styles.starIcon}
+                    alt=""
+                    src="/star-icon.svg"
+                  />
+                </div>
+              </div>
+              <div className={styles.bottomContainer}>
+                <div className={styles.pricePerNight}>
+                  <div className={styles.rating}>$655</div>
+                  <div className={styles.night}>/night</div>
+                </div>
+                <button className={styles.bestTime1}>
+                  <img
+                    className={styles.trendIcon}
+                    alt=""
+                    src="/trend-icon.svg"
+                  />
+                  <div className={styles.priceChart}>Price chart</div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className={styles.listingItem1}>
+            <img
+              className={styles.listingImageIcon}
+              alt=""
+              src="/image6@2x.png"
+            />
+            <div className={styles.superhostTag}>
+              <img
+                className={styles.superhostIcon}
+                alt=""
+                src="/superhost-icon.svg"
+              />
+              <div className={styles.superhost}>Superhost</div>
+            </div>
+            <img className={styles.heartIcon} alt="" src="/hearticon.svg" />
+            <div className={styles.itemDetails}>
+              <div className={styles.listingInfo}>
+                <div className={styles.listingCont}>
+                  <div className={styles.listingTitle}>Sunny Estate</div>
+                  <div className={styles.listingSubtitle}>
+                    Barcort, Ontario Canada
+                  </div>
+                </div>
+                <div className={styles.ratingCont}>
+                  <div className={styles.rating}>5.0</div>
+                  <img
+                    className={styles.starIcon}
+                    alt=""
+                    src="/star-icon.svg"
+                  />
+                </div>
+              </div>
+              <div className={styles.bottomContainer}>
+                <div className={styles.pricePerNight}>
+                  <div className={styles.rating}>$320</div>
+                  <div className={styles.night}>/night</div>
+                </div>
+                <button className={styles.bestTime}>
+                  <img
+                    className={styles.trendIcon}
+                    alt=""
+                    src="/trend-icon.svg"
+                  />
+                  <div className={styles.priceChart}>Price chart</div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className={styles.listingItem1}>
+            <img
+              className={styles.listingImageIcon}
+              alt=""
+              src="/image7@2x.png"
+            />
+            <div className={styles.superhostTag}>
+              <img
+                className={styles.superhostIcon}
+                alt=""
+                src="/superhost-icon.svg"
+              />
+              <div className={styles.superhost}>Superhost</div>
+            </div>
+            <img className={styles.heartIcon} alt="" src="/hearticon.svg" />
+            <div className={styles.itemDetails}>
+              <div className={styles.listingInfo}>
+                <div className={styles.listingCont}>
+                  <div className={styles.listingTitle}>Lawrence Hills</div>
+                  <div className={styles.listingSubtitle}>
+                    Lawrence, Ontario Canada
+                  </div>
+                </div>
+                <div className={styles.ratingCont}>
+                  <div className={styles.rating}>5.0</div>
+                  <img
+                    className={styles.starIcon}
+                    alt=""
+                    src="/star-icon.svg"
+                  />
+                </div>
+              </div>
+              <div className={styles.bottomContainer}>
+                <div className={styles.pricePerNight}>
+                  <div className={styles.rating}>$350</div>
+                  <div className={styles.night}>/night</div>
+                </div>
+                <button className={styles.bestTime1}>
+                  <img
+                    className={styles.trendIcon}
+                    alt=""
+                    src="/trend-icon.svg"
+                  />
+                  <div className={styles.priceChart}>Price chart</div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className={styles.listingItem1}>
+            <img
+              className={styles.listingImageIcon}
+              alt=""
+              src="/image8@2x.png"
+            />
+            <div className={styles.superhostTag}>
+              <img
+                className={styles.superhostIcon}
+                alt=""
+                src="/superhost-icon.svg"
+              />
+              <div className={styles.superhost}>Superhost</div>
+            </div>
+            <img className={styles.heartIcon} alt="" src="/hearticon.svg" />
+            <div className={styles.itemDetails}>
+              <div className={styles.listingInfo}>
+                <div className={styles.listingCont}>
+                  <div className={styles.listingTitle}>Simcoe Lake Lodge</div>
+                  <div className={styles.listingSubtitle}>
+                    Simcoe, Ontario, Canada
+                  </div>
+                </div>
+                <div className={styles.ratingCont}>
+                  <div className={styles.rating}>5.0</div>
+                  <img
+                    className={styles.starIcon}
+                    alt=""
+                    src="/star-icon.svg"
+                  />
+                </div>
+              </div>
+              <div className={styles.bottomContainer}>
+                <div className={styles.pricePerNight}>
+                  <div className={styles.rating}>$395</div>
+                  <div className={styles.night}>/night</div>
+                </div>
+                <button className={styles.bestTime1}>
+                  <img
+                    className={styles.trendIcon}
+                    alt=""
+                    src="/trend-icon.svg"
+                  />
+                  <div className={styles.priceChart}>Price chart</div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className={styles.listingItem1}>
+            <img
+              className={styles.listingImageIcon}
+              alt=""
+              src="/image9@2x.png"
+            />
+            <div className={styles.superhostTag}>
+              <img
+                className={styles.superhostIcon}
+                alt=""
+                src="/superhost-icon.svg"
+              />
+              <div className={styles.superhost}>Superhost</div>
+            </div>
+            <img className={styles.heartIcon} alt="" src="/hearticon.svg" />
+            <div className={styles.itemDetails}>
+              <div className={styles.listingInfo}>
+                <div className={styles.listingCont}>
+                  <div className={styles.listingTitle}>Wasaga Beach Home</div>
+                  <div className={styles.listingSubtitle}>
+                    Georgina Bay, Ontario, Canada
+                  </div>
+                </div>
+                <div className={styles.ratingCont}>
+                  <div className={styles.rating}>5.0</div>
+                  <img
+                    className={styles.starIcon}
+                    alt=""
+                    src="/star-icon.svg"
+                  />
+                </div>
+              </div>
+              <div className={styles.bottomContainer}>
+                <div className={styles.pricePerNight}>
+                  <div className={styles.rating}>$385</div>
+                  <div className={styles.night}>/night</div>
+                </div>
+                <button className={styles.bestTime}>
+                  <img
+                    className={styles.trendIcon}
+                    alt=""
+                    src="/trend-icon.svg"
+                  />
+                  <div className={styles.priceChart}>Price chart</div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className={styles.listingItem1}>
+            <img
+              className={styles.listingImageIcon}
+              alt=""
+              src="/image10@2x.png"
+            />
+            <div className={styles.superhostTag}>
+              <img
+                className={styles.superhostIcon}
+                alt=""
+                src="/superhost-icon.svg"
+              />
+              <div className={styles.superhost}>Superhost</div>
+            </div>
+            <img className={styles.heartIcon} alt="" src="/hearticon.svg" />
+            <div className={styles.itemDetails}>
+              <div className={styles.listingInfo}>
+                <div className={styles.listingCont}>
+                  <div className={styles.listingTitle}>Banff Hills</div>
+                  <div className={styles.listingSubtitle}>
+                    Banff, Alberta, Canada
+                  </div>
+                </div>
+                <div className={styles.ratingCont}>
+                  <div className={styles.rating}>5.0</div>
+                  <img
+                    className={styles.starIcon}
+                    alt=""
+                    src="/star-icon.svg"
+                  />
+                </div>
+              </div>
+              <div className={styles.bottomContainer}>
+                <div className={styles.pricePerNight}>
+                  <div className={styles.rating}>$385</div>
+                  <div className={styles.night}>/night</div>
+                </div>
+                <button className={styles.bestTime}>
+                  <img
+                    className={styles.trendIcon}
+                    alt=""
+                    src="/trend-icon.svg"
+                  />
+                  <div className={styles.priceChart}>Price chart</div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className={styles.listingItem1}>
+            <img
+              className={styles.listingImageIcon}
+              alt=""
+              src="/image11@2x.png"
+            />
+            <div className={styles.superhostTag}>
+              <img
+                className={styles.superhostIcon}
+                alt=""
+                src="/superhost-icon.svg"
+              />
+              <div className={styles.superhost}>Superhost</div>
+            </div>
+            <img className={styles.heartIcon} alt="" src="/hearticon.svg" />
+            <div className={styles.itemDetails}>
+              <div className={styles.listingInfo}>
+                <div className={styles.listingCont}>
+                  <div className={styles.listingTitle}>Creemore Canada</div>
+                  <div className={styles.listingSubtitle}>
+                    Creemore, Alberta, Canada
+                  </div>
+                </div>
+                <div className={styles.ratingCont}>
+                  <div className={styles.rating}>5.0</div>
+                  <img
+                    className={styles.starIcon}
+                    alt=""
+                    src="/star-icon.svg"
+                  />
+                </div>
+              </div>
+              <div className={styles.bottomContainer}>
+                <div className={styles.pricePerNight}>
+                  <div className={styles.rating}>$385</div>
+                  <div className={styles.night}>/night</div>
+                </div>
+                <button className={styles.bestTime1}>
+                  <img
+                    className={styles.trendIcon}
+                    alt=""
+                    src="/trend-icon.svg"
+                  />
+                  <div className={styles.priceChart}>Price chart</div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className={styles.listingItem1}>
+            <img
+              className={styles.listingImageIcon}
+              alt=""
+              src="/image12@2x.png"
+            />
+            <div className={styles.superhostTag}>
+              <img
+                className={styles.superhostIcon}
+                alt=""
+                src="/superhost-icon.svg"
+              />
+              <div className={styles.superhost}>Superhost</div>
+            </div>
+            <img className={styles.heartIcon} alt="" src="/hearticon.svg" />
+            <div className={styles.itemDetails}>
+              <div className={styles.listingInfo}>
+                <div className={styles.listingCont}>
+                  <div className={styles.listingTitle}>Kawartha Lakes</div>
+                  <div className={styles.listingSubtitle12}>
+                    Kawartha, Alberta, Canada
+                  </div>
+                </div>
+                <div className={styles.ratingCont}>
+                  <div className={styles.rating}>5.0</div>
+                  <img
+                    className={styles.starIcon}
+                    alt=""
+                    src="/star-icon.svg"
+                  />
+                </div>
+              </div>
+              <div className={styles.bottomContainer}>
+                <div className={styles.pricePerNight}>
+                  <div className={styles.rating}>$385</div>
+                  <div className={styles.night}>/night</div>
+                </div>
+                <button className={styles.bestTime1}>
+                  <img
+                    className={styles.trendIcon}
+                    alt=""
+                    src="/trend-icon.svg"
+                  />
+                  <div className={styles.priceChart}>Price chart</div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className={styles.listingItem1}>
+            <img
+              className={styles.listingImageIcon}
+              alt=""
+              src="/image13@2x.png"
+            />
+            <div className={styles.superhostTag}>
+              <img
+                className={styles.superhostIcon}
+                alt=""
+                src="/superhost-icon.svg"
+              />
+              <div className={styles.superhost}>Superhost</div>
+            </div>
+            <img className={styles.heartIcon} alt="" src="/hearticon.svg" />
+            <div className={styles.itemDetails}>
+              <div className={styles.listingInfo}>
+                <div className={styles.listingCont}>
+                  <div className={styles.listingTitle}>Revelstoke Cabin</div>
+                  <div className={styles.listingSubtitle}>
+                    Revelstoke, Alberta, Canada
+                  </div>
+                </div>
+                <div className={styles.ratingCont}>
+                  <div className={styles.rating}>5.0</div>
+                  <img
+                    className={styles.starIcon}
+                    alt=""
+                    src="/star-icon.svg"
+                  />
+                </div>
+              </div>
+              <div className={styles.bottomContainer}>
+                <div className={styles.pricePerNight}>
+                  <div className={styles.rating}>$385</div>
+                  <div className={styles.night}>/night</div>
+                </div>
+                <button className={styles.bestTime}>
+                  <img
+                    className={styles.trendIcon}
+                    alt=""
+                    src="/trend-icon.svg"
+                  />
+                  <div className={styles.priceChart}>Price chart</div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className={styles.listingItem1}>
+            <img
+              className={styles.listingImageIcon}
+              alt=""
+              src="/image14@2x.png"
+            />
+            <div className={styles.superhostTag}>
+              <img
+                className={styles.superhostIcon}
+                alt=""
+                src="/superhost-icon.svg"
+              />
+              <div className={styles.superhost}>Superhost</div>
+            </div>
+            <img className={styles.heartIcon} alt="" src="/hearticon.svg" />
+            <div className={styles.itemDetails}>
+              <div className={styles.listingInfo}>
+                <div className={styles.listingCont}>
+                  <div className={styles.listingTitle}>Brightwoods Estate</div>
+                  <div className={styles.listingSubtitle}>
+                    Brightwoods Estate
+                  </div>
+                </div>
+                <div className={styles.ratingCont}>
+                  <div className={styles.rating}>5.0</div>
+                  <img
+                    className={styles.starIcon}
+                    alt=""
+                    src="/star-icon.svg"
+                  />
+                </div>
+              </div>
+              <div className={styles.bottomContainer}>
+                <div className={styles.pricePerNight}>
+                  <div className={styles.rating}>$385</div>
+                  <div className={styles.night}>/night</div>
+                </div>
+                <button className={styles.bestTime1}>
+                  <img
+                    className={styles.trendIcon}
+                    alt=""
+                    src="/trend-icon.svg"
+                  />
+                  <div className={styles.priceChart}>Price chart</div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className={styles.listingItem1}>
+            <img
+              className={styles.listingImageIcon}
+              alt=""
+              src="/image15@2x.png"
+            />
+            <div className={styles.superhostTag}>
+              <img
+                className={styles.superhostIcon}
+                alt=""
+                src="/superhost-icon.svg"
+              />
+              <div className={styles.superhost}>Superhost</div>
+            </div>
+            <img className={styles.heartIcon} alt="" src="/hearticon.svg" />
+            <div className={styles.itemDetails}>
+              <div className={styles.listingInfo}>
+                <div className={styles.listingCont}>
+                  <div className={styles.listingTitle}>Brightwoods Estate</div>
+                  <div className={styles.listingSubtitle}>
+                    Brightwoods Estate
+                  </div>
+                </div>
+                <div className={styles.ratingCont}>
+                  <div className={styles.rating}>5.0</div>
+                  <img
+                    className={styles.starIcon}
+                    alt=""
+                    src="/star-icon.svg"
+                  />
+                </div>
+              </div>
+              <div className={styles.bottomContainer}>
+                <div className={styles.pricePerNight}>
+                  <div className={styles.rating}>$385</div>
+                  <div className={styles.night}>/night</div>
+                </div>
+                <button className={styles.bestTime1}>
+                  <img
+                    className={styles.trendIcon}
+                    alt=""
+                    src="/trend-icon.svg"
+                  />
+                  <div className={styles.priceChart}>Price chart</div>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
         <div className={styles.showMoreButton}>
           <div className={styles.showMoreText}>Show more</div>
