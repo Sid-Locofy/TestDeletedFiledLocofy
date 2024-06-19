@@ -1,27 +1,16 @@
 import { FunctionComponent } from "react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import styles from "./PropertyDetails.module.css";
 
 const PropertyDetails: FunctionComponent = () => {
   return (
     <div className={styles.propertyDetails}>
-      <div className={styles.header}>
-        <div className={styles.headerContent}>
-          <img className={styles.logoIcon} alt="" src="/logo.svg" />
-          <div className={styles.navLinks}>
-            <div className={styles.home}>Home</div>
-            <div className={styles.home}>Stays</div>
-            <div className={styles.home}>Become a host</div>
-          </div>
-          <div className={styles.loginSection}>
-            <img
-              className={styles.notificationsIcon}
-              alt=""
-              src="/notifications@2x.png"
-            />
-            <img className={styles.avatarIcon} alt="" src="/avatar@2x.png" />
-          </div>
-        </div>
-      </div>
+      <Header
+        notifications="/notifications@2x.png"
+        avatar="/avatar@2x.png"
+        showLoginSection
+      />
       <div className={styles.listingHeroParent}>
         <div className={styles.listingHero}>
           <div className={styles.frameParent}>
@@ -211,7 +200,7 @@ const PropertyDetails: FunctionComponent = () => {
                 <div className={styles.button1}>Show more</div>
               </div>
               <div className={styles.detailscardParent}>
-                <div className={styles.loginSection}>
+                <div className={styles.detailscard}>
                   <img
                     className={styles.detailscardChild}
                     alt=""
@@ -226,7 +215,7 @@ const PropertyDetails: FunctionComponent = () => {
                     </div>
                   </div>
                 </div>
-                <div className={styles.loginSection}>
+                <div className={styles.detailscard}>
                   <img
                     className={styles.detailscardChild}
                     alt=""
@@ -239,7 +228,7 @@ const PropertyDetails: FunctionComponent = () => {
                     </div>
                   </div>
                 </div>
-                <div className={styles.loginSection}>
+                <div className={styles.detailscard}>
                   <img
                     className={styles.detailscardChild}
                     alt=""
@@ -265,7 +254,7 @@ const PropertyDetails: FunctionComponent = () => {
                         alt=""
                         src="/mdilake.svg"
                       />
-                      <div className={styles.home}>Lakeside</div>
+                      <div className={styles.lakeside}>Lakeside</div>
                     </div>
                     <div className={styles.mdilakeParent}>
                       <img
@@ -281,7 +270,7 @@ const PropertyDetails: FunctionComponent = () => {
                         alt=""
                         src="/materialsymbolsnestcamiqoutdooroutline.svg"
                       />
-                      <div className={styles.home}>
+                      <div className={styles.lakeside}>
                         Security cameras on property
                       </div>
                     </div>
@@ -291,7 +280,7 @@ const PropertyDetails: FunctionComponent = () => {
                         alt=""
                         src="/ionwifi.svg"
                       />
-                      <div className={styles.home}>Wifi</div>
+                      <div className={styles.lakeside}>Wifi</div>
                     </div>
                   </div>
                   <div className={styles.amenitiessection1}>
@@ -301,7 +290,7 @@ const PropertyDetails: FunctionComponent = () => {
                         alt=""
                         src="/phcar.svg"
                       />
-                      <div className={styles.home}>Free parking</div>
+                      <div className={styles.lakeside}>Free parking</div>
                     </div>
                     <div className={styles.mdilakeParent}>
                       <img
@@ -309,7 +298,7 @@ const PropertyDetails: FunctionComponent = () => {
                         alt=""
                         src="/cilshower.svg"
                       />
-                      <div className={styles.home}>Outdoor shower</div>
+                      <div className={styles.lakeside}>Outdoor shower</div>
                     </div>
                     <div className={styles.mdilakeParent}>
                       <img
@@ -317,7 +306,7 @@ const PropertyDetails: FunctionComponent = () => {
                         alt=""
                         src="/materialsymbolswatervocoutlinerounded.svg"
                       />
-                      <div className={styles.home}>Hot water</div>
+                      <div className={styles.lakeside}>Hot water</div>
                     </div>
                     <div className={styles.mdilakeParent}>
                       <img
@@ -325,7 +314,7 @@ const PropertyDetails: FunctionComponent = () => {
                         alt=""
                         src="/covidpersonalhygienehandliquidsoap.svg"
                       />
-                      <div className={styles.home}>Shampoo</div>
+                      <div className={styles.lakeside}>Shampoo</div>
                     </div>
                   </div>
                   <div className={styles.amenitiessection1}>
@@ -335,7 +324,7 @@ const PropertyDetails: FunctionComponent = () => {
                         alt=""
                         src="/phfireextinguisher.svg"
                       />
-                      <div className={styles.home}>Fire Extinguisher</div>
+                      <div className={styles.lakeside}>Fire Extinguisher</div>
                     </div>
                     <div className={styles.mdilakeParent}>
                       <img
@@ -343,7 +332,7 @@ const PropertyDetails: FunctionComponent = () => {
                         alt=""
                         src="/streamlinefoodkitchenwarerefrigeratorfridgecookappliancescookingnutritionfreezerappliancefood.svg"
                       />
-                      <div className={styles.home}>Freezer</div>
+                      <div className={styles.lakeside}>Freezer</div>
                     </div>
                     <div className={styles.mdilakeParent}>
                       <img
@@ -351,7 +340,7 @@ const PropertyDetails: FunctionComponent = () => {
                         alt=""
                         src="/materialsymbolscoffeemakeroutline.svg"
                       />
-                      <div className={styles.home}>Coffee Maker</div>
+                      <div className={styles.lakeside}>Coffee Maker</div>
                     </div>
                     <div className={styles.mdilakeParent}>
                       <img
@@ -359,7 +348,7 @@ const PropertyDetails: FunctionComponent = () => {
                         alt=""
                         src="/mdistove.svg"
                       />
-                      <div className={styles.home}>Glass stove</div>
+                      <div className={styles.lakeside}>Glass stove</div>
                     </div>
                   </div>
                 </div>
@@ -379,7 +368,7 @@ const PropertyDetails: FunctionComponent = () => {
                         alt=""
                         src="/vector3.svg"
                       />
-                      <div className={styles.home}>The Bridle Path</div>
+                      <div className={styles.lakeside}>The Bridle Path</div>
                     </div>
                   </div>
                   <div className={styles.weatherInfoParent}>
@@ -713,39 +702,7 @@ const PropertyDetails: FunctionComponent = () => {
           </div>
         </div>
       </div>
-      <div className={styles.footer}>
-        <div className={styles.footerInner}>
-          <div className={styles.frameParent29}>
-            <div className={styles.supportParent}>
-              <div className={styles.support}>Support</div>
-              <div className={styles.home}>Help Centre</div>
-              <div className={styles.home}>AirCover</div>
-              <div className={styles.home}>Combating discrimination</div>
-              <div className={styles.home}>
-                Supporting people with disabilities
-              </div>
-              <div className={styles.home}>Cencellation options</div>
-              <div className={styles.home}>Report neighbourhood concern</div>
-            </div>
-            <div className={styles.supportParent}>
-              <div className={styles.support}>Hosting</div>
-              <div className={styles.home}>Local home</div>
-              <div className={styles.home}>Cover for hosts</div>
-              <div className={styles.home}>Hosting resources</div>
-              <div className={styles.home}>Community forum</div>
-              <div className={styles.home}>Hosting responsibly</div>
-            </div>
-            <div className={styles.supportParent}>
-              <div className={styles.support}>Localhost</div>
-              <div className={styles.home}>Newsroom</div>
-              <div className={styles.home}>New Features</div>
-              <div className={styles.home}>Careers</div>
-              <div className={styles.home}>Investres</div>
-              <div className={styles.home}>Gift cards</div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Footer />
       <div className={styles.band}>
         <div className={styles.bandInner}>
           <div className={styles.localhostIncAllRightsResParent}>

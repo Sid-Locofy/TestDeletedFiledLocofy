@@ -1,4 +1,5 @@
 import { FunctionComponent, useCallback } from "react";
+import Header from "../components/Header";
 import { useNavigate } from "react-router-dom";
 import styles from "./SignInPage.module.css";
 
@@ -11,24 +12,11 @@ const SignInPage: FunctionComponent = () => {
 
   return (
     <div className={styles.signInPage}>
-      <div className={styles.header}>
-        <div className={styles.headerContent}>
-          <img className={styles.logoIcon} alt="" src="/logo.svg" />
-          <div className={styles.navLinks}>
-            <div className={styles.home}>Home</div>
-            <div className={styles.home}>Stays</div>
-            <div className={styles.home}>Become a host</div>
-          </div>
-          <div className={styles.loginSection}>
-            <img
-              className={styles.notificationsIcon}
-              alt=""
-              src="/notifications1@2x.png"
-            />
-            <img className={styles.avatarIcon} alt="" src="/avatar1@2x.png" />
-          </div>
-        </div>
-      </div>
+      <Header
+        notifications="/notifications1@2x.png"
+        avatar="/avatar1@2x.png"
+        showLoginSection={false}
+      />
       <div className={styles.loginSections}>
         <div className={styles.formWrapper}>
           <div className={styles.form}>
