@@ -1,7 +1,6 @@
 import { FunctionComponent, useCallback } from "react";
 import "antd/dist/antd.min.css";
 import { AutoComplete } from "antd";
-import Header from "../components/Header";
 import { useNavigate } from "react-router-dom";
 import styles from "./Homepage.module.css";
 
@@ -14,11 +13,24 @@ const Homepage: FunctionComponent = () => {
 
   return (
     <div className={styles.homepage}>
-      <Header
-        notifications="/notifications@2x.png"
-        avatar="/avatar@2x.png"
-        showLoginSection
-      />
+      <div className={styles.header}>
+        <div className={styles.headerContent}>
+          <img className={styles.logoIcon} alt="" src="/logo.svg" />
+          <div className={styles.navLinks}>
+            <div className={styles.home}>Home</div>
+            <div className={styles.home}>Stays</div>
+            <div className={styles.home}>Become a host</div>
+          </div>
+          <div className={styles.loginSection}>
+            <img
+              className={styles.notificationsIcon}
+              alt=""
+              src="/notifications@2x.png"
+            />
+            <img className={styles.avatarIcon} alt="" src="/avatar@2x.png" />
+          </div>
+        </div>
+      </div>
       <div className={styles.heroContainer}>
         <div className={styles.heroContainerInner}>
           <div className={styles.frameParent}>
@@ -890,32 +902,30 @@ const Homepage: FunctionComponent = () => {
           <div className={styles.frameGroup}>
             <div className={styles.supportParent}>
               <div className={styles.support}>Support</div>
-              <div className={styles.helpCentre}>Help Centre</div>
-              <div className={styles.helpCentre}>AirCover</div>
-              <div className={styles.helpCentre}>Combating discrimination</div>
-              <div className={styles.helpCentre}>
+              <div className={styles.home}>Help Centre</div>
+              <div className={styles.home}>AirCover</div>
+              <div className={styles.home}>Combating discrimination</div>
+              <div className={styles.home}>
                 Supporting people with disabilities
               </div>
-              <div className={styles.helpCentre}>Cencellation options</div>
-              <div className={styles.helpCentre}>
-                Report neighbourhood concern
-              </div>
+              <div className={styles.home}>Cencellation options</div>
+              <div className={styles.home}>Report neighbourhood concern</div>
             </div>
             <div className={styles.supportParent}>
               <div className={styles.support}>Hosting</div>
-              <div className={styles.helpCentre}>Local home</div>
-              <div className={styles.helpCentre}>Cover for hosts</div>
-              <div className={styles.helpCentre}>Hosting resources</div>
-              <div className={styles.helpCentre}>Community forum</div>
-              <div className={styles.helpCentre}>Hosting responsibly</div>
+              <div className={styles.home}>Local home</div>
+              <div className={styles.home}>Cover for hosts</div>
+              <div className={styles.home}>Hosting resources</div>
+              <div className={styles.home}>Community forum</div>
+              <div className={styles.home}>Hosting responsibly</div>
             </div>
             <div className={styles.supportParent}>
               <div className={styles.support}>Localhost</div>
-              <div className={styles.helpCentre}>Newsroom</div>
-              <div className={styles.helpCentre}>New Features</div>
-              <div className={styles.helpCentre}>Careers</div>
-              <div className={styles.helpCentre}>Investres</div>
-              <div className={styles.helpCentre}>Gift cards</div>
+              <div className={styles.home}>Newsroom</div>
+              <div className={styles.home}>New Features</div>
+              <div className={styles.home}>Careers</div>
+              <div className={styles.home}>Investres</div>
+              <div className={styles.home}>Gift cards</div>
             </div>
           </div>
         </div>

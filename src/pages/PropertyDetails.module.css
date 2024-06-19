@@ -1,3 +1,55 @@
+.logoIcon {
+  width: 156.8px;
+  height: 40.5px;
+}
+.home,
+.logoIcon {
+  position: relative;
+}
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-11xl);
+}
+.avatarIcon,
+.notificationsIcon {
+  width: 26px;
+  position: relative;
+  height: 26.5px;
+  object-fit: cover;
+}
+.avatarIcon {
+  width: 36px;
+  border-radius: 50%;
+  height: 36px;
+}
+.loginSection {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+}
+.header,
+.headerContent,
+.loginSection {
+  display: flex;
+  align-items: center;
+}
+.headerContent {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1280px;
+}
+.header {
+  align-self: stretch;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--light-grey-border);
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-sm) var(--padding-xl);
+}
 .frameChild,
 .frameItem {
   flex-shrink: 0;
@@ -404,19 +456,11 @@
   letter-spacing: 0.02em;
   color: var(--color-gray-200);
 }
-.dedicatedWorkspaceParent,
-.detailscard {
-  display: flex;
+.dedicatedWorkspaceParent {
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
   gap: var(--gap-11xs);
 }
-.detailscard {
-  flex-direction: row;
-  align-items: center;
-  gap: var(--gap-xl);
-}
+.dedicatedWorkspaceParent,
 .detailscardParent,
 .frameParent7,
 .listingDescription {
@@ -454,13 +498,10 @@
 }
 .mdilakeIcon {
   width: 20px;
+  position: relative;
   height: 21px;
   overflow: hidden;
   flex-shrink: 0;
-}
-.lakeside,
-.mdilakeIcon {
-  position: relative;
 }
 .mdilakeParent {
   display: flex;
@@ -893,6 +934,8 @@
   flex-direction: column;
   padding: var(--padding-xl) var(--padding-31xl);
   gap: 44px;
+  font-size: var(--font-size-5xl);
+  color: var(--dark);
 }
 .support {
   position: relative;
@@ -936,6 +979,7 @@
   justify-content: center;
   padding: var(--padding-xl) var(--padding-11xl) var(--padding-21xl);
   font-size: var(--font-size-base);
+  color: var(--dark);
 }
 .localhostIncAll {
   position: relative;
@@ -977,8 +1021,6 @@
   background-color: var(--color-gray-100);
   border-top: 1px solid var(--light-grey-border);
   padding: var(--padding-xs) var(--padding-11xl);
-  font-size: var(--font-size-sm);
-  color: var(--color-black);
 }
 .propertyDetails {
   width: 100%;
@@ -986,8 +1028,8 @@
   overflow: scroll;
   height: 100vh;
   text-align: left;
-  font-size: var(--font-size-5xl);
-  color: var(--dark);
+  font-size: var(--font-size-sm);
+  color: var(--color-black);
   font-family: var(--font-archivo);
 }
 @media screen and (max-width: 960px) {

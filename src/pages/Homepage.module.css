@@ -1,3 +1,55 @@
+.logoIcon {
+  width: 156.8px;
+  height: 40.5px;
+}
+.home,
+.logoIcon {
+  position: relative;
+}
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-11xl);
+}
+.avatarIcon,
+.notificationsIcon {
+  width: 26px;
+  position: relative;
+  height: 26.5px;
+  object-fit: cover;
+}
+.avatarIcon {
+  width: 36px;
+  border-radius: 50%;
+  height: 36px;
+}
+.loginSection {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+}
+.header,
+.headerContent,
+.loginSection {
+  display: flex;
+  align-items: center;
+}
+.headerContent {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1280px;
+}
+.header {
+  align-self: stretch;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--light-grey-border);
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-sm) var(--padding-xl);
+}
 .host {
   color: var(--accent);
 }
@@ -155,6 +207,7 @@
 }
 .heroContainer {
   align-items: flex-start;
+  font-size: 40.4px;
 }
 .staysNearby,
 .torontoOntario {
@@ -454,11 +507,8 @@
   color: var(--accent);
 }
 .support {
-  font-weight: 600;
-}
-.helpCentre,
-.support {
   position: relative;
+  font-weight: 600;
 }
 .supportParent {
   flex: 1;
@@ -538,7 +588,6 @@
   align-self: stretch;
   border-top: 1px solid var(--light-grey-border);
   padding: var(--padding-xs) var(--padding-11xl);
-  font-size: var(--font-size-sm);
 }
 .homepage {
   width: 100%;
@@ -546,7 +595,7 @@
   background-color: var(--color-gray-100);
   overflow: hidden;
   text-align: left;
-  font-size: 40.4px;
+  font-size: var(--font-size-sm);
   color: var(--color-black);
   font-family: var(--font-archivo);
 }

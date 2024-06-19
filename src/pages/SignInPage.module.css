@@ -1,5 +1,60 @@
+.logoIcon {
+  width: 156.8px;
+  height: 40.5px;
+}
+.home,
+.logoIcon {
+  position: relative;
+}
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-11xl);
+}
+.avatarIcon,
+.notificationsIcon {
+  width: 26px;
+  position: relative;
+  height: 26.5px;
+  object-fit: cover;
+}
+.avatarIcon {
+  width: 36px;
+  border-radius: 50%;
+  height: 36px;
+}
+.headerContent,
+.loginSection {
+  flex-direction: row;
+  align-items: center;
+}
+.loginSection {
+  display: none;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+}
+.headerContent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+}
+.header,
 .signIn {
   align-self: stretch;
+}
+.header {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--light-grey-border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-sm) var(--padding-xl);
+}
+.signIn {
   height: 28px;
   position: relative;
   letter-spacing: 0.02em;
@@ -227,6 +282,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+  font-size: var(--font-size-7xl);
+  color: var(--dark);
 }
 .localhostIncAll {
   position: relative;
@@ -267,8 +324,6 @@
   border-top: 1px solid var(--light-grey-border);
   align-items: center;
   padding: var(--padding-xs) var(--padding-11xl);
-  font-size: var(--font-size-sm);
-  color: var(--color-black);
 }
 .signInPage {
   position: relative;
@@ -278,8 +333,8 @@
   align-items: flex-start;
   height: 100vh;
   text-align: left;
-  font-size: var(--font-size-7xl);
-  color: var(--dark);
+  font-size: var(--font-size-sm);
+  color: var(--color-black);
   font-family: var(--font-archivo);
 }
 .signInPage:hover {
