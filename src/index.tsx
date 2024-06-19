@@ -7,7 +7,7 @@ import "./global.css";
 
 const container = document.getElementById("root");
 const root = createRoot(container!);
-
+const sid = "locofy"
 root.render(
   <BrowserRouter>
     <App />
