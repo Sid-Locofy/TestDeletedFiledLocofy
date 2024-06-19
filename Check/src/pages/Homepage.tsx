@@ -7,6 +7,7 @@ import ListingItem from "../components/ListingItem";
 import Footer from "../components/Footer";
 import styles from "./Homepage.module.css";
 
+const sid = "Locofy"
 const Homepage: FunctionComponent = () => {
   const navigate = useNavigate();
 
