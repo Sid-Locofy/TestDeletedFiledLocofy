@@ -533,7 +533,7 @@ const PropertyDetails: FunctionComponent = () => {
                   <img
                     className={styles.frameChild4}
                     alt=""
-                    src="/ellipse-12@2x.png"
+                    src="/ellipse-121@2x.png"
                   />
                   <div className={styles.johnnyCashParent}>
                     <div className={styles.michelleWard}>Yuta Watanabe</div>
@@ -560,7 +560,7 @@ const PropertyDetails: FunctionComponent = () => {
                   <img
                     className={styles.frameChild4}
                     alt=""
-                    src="/ellipse-12@2x.png"
+                    src="/ellipse-122@2x.png"
                   />
                   <div className={styles.johnnyCashParent}>
                     <div className={styles.michelleWard}>Shane Willis</div>

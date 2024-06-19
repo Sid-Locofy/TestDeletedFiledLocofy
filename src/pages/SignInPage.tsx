@@ -23,9 +23,9 @@ const SignInPage: FunctionComponent = () => {
             <img
               className={styles.notificationsIcon}
               alt=""
-              src="/notifications@2x.png"
+              src="/notifications1@2x.png"
             />
-            <img className={styles.avatarIcon} alt="" src="/avatar@2x.png" />
+            <img className={styles.avatarIcon} alt="" src="/avatar1@2x.png" />
           </div>
         </div>
       </div>
@@ -77,7 +77,7 @@ const SignInPage: FunctionComponent = () => {
                     <img
                       className={styles.imageIcon}
                       alt=""
-                      src="/image@2x.png"
+                      src="/image19@2x.png"
                     />
                     <div className={styles.text}>Google</div>
                   </button>
@@ -85,7 +85,7 @@ const SignInPage: FunctionComponent = () => {
                     <img
                       className={styles.imageIcon}
                       alt=""
-                      src="/image@2x.png"
+                      src="/image20@2x.png"
                     />
                     <div className={styles.text1}>Facebook</div>
                   </button>
@@ -93,7 +93,7 @@ const SignInPage: FunctionComponent = () => {
                     <img
                       className={styles.imageIcon}
                       alt=""
-                      src="/image@2x.png"
+                      src="/image21@2x.png"
                     />
                     <div className={styles.text2}>Apple</div>
                   </button>

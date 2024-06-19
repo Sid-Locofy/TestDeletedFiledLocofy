@@ -838,7 +838,7 @@
   width: 181px;
   position: relative;
   gap: var(--gap-3xs);
-  background-image: url(/public/frame-9@3x.png);
+  background-image: url(/public/frame-91@3x.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -902,13 +902,13 @@
   flex-direction: column;
   position: relative;
   gap: var(--gap-3xs);
-  background-image: url(/public/frame-91@3x.png);
+  background-image: url(/public/frame-911@3x.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
 }
 .frameParent26 {
-  background-image: url(/public/frame-92@3x.png);
+  background-image: url(/public/frame-921@3x.png);
 }
 .simcoeOntarioCanada {
   position: relative;

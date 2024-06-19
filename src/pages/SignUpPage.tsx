@@ -87,7 +87,7 @@ const SignUpPage: FunctionComponent = () => {
                     <img
                       className={styles.imageIcon}
                       alt=""
-                      src="/image@2x.png"
+                      src="/image16@2x.png"
                     />
                     <div className={styles.text}>Google</div>
                   </button>
@@ -95,7 +95,7 @@ const SignUpPage: FunctionComponent = () => {
                     <img
                       className={styles.imageIcon}
                       alt=""
-                      src="/image@2x.png"
+                      src="/image17@2x.png"
                     />
                     <div className={styles.text1}>Facebook</div>
                   </button>
@@ -103,7 +103,7 @@ const SignUpPage: FunctionComponent = () => {
                     <img
                       className={styles.imageIcon}
                       alt=""
-                      src="/image@2x.png"
+                      src="/image18@2x.png"
                     />
                     <div className={styles.text2}>Apple</div>
                   </button>
